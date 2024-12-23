@@ -1,6 +1,12 @@
+import Hero from "@/components/Hero"
+import ResponsiveNav from "@/components/Navbar/ResponsiveNav"
+
 const HomePage = () => {
   return (
-    <div className=" ">HomePage</div>
+    <div>
+      <ResponsiveNav />
+      HomePage
+    </div>
   )
 }
 
