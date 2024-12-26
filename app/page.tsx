@@ -6,6 +6,7 @@ const HomePage = () => {
   return (
     <div>
       <ResponsiveNav />
+      <Hero />
       HomePage
       <Footer />
     </div>

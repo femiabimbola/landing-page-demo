@@ -6,7 +6,7 @@ const ResponsiveNav = () => {
   return (
     <div>
       <DesktopNav />
-      <MobileNav  />
+      {/* <MobileNav  /> */}
     </div>
   )
 }
