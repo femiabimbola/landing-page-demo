@@ -30,6 +30,13 @@ export default {
           50: '#FEC601',
         },
       },
+      backgroundImage: {
+        'bg-img-1': "url('/assets/img-1.png')",
+        'bg-img-2': "url('/assets/img-2.png')",
+        'feature-bg': "url('/assets/feature-bg.png')",
+        pattern: "url('/assets/pattern.png')",
+        'pattern-2': "url('/assets/pattern-bg.png')",
+      },
       screens: {
         xs: '400px',
         '3xl': '1680px',

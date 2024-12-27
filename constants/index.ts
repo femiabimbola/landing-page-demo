@@ -17,7 +17,7 @@ export const FOOTER_LINKS = [
 
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
-  links: [
+  links: [ 
     { label: 'Admin Officer', value: '123-456-7890' },
     { label: 'Email Officer', value: 'hilink@akinthil.com' },
   ],
