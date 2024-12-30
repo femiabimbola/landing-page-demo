@@ -1,7 +1,9 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
   //Navar toggle
@@ -31,18 +33,48 @@ const Header = () => {
       setOpenIndex(index);
     }
   };
-  
+
   const usePathName = usePathname();
 
   return (
-    <header className={`header left-0 top-0 z-40 flex w-full items-center ${
-      sticky
-        ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-        : "absolute bg-transparent"
-    }`}>
-
+    <header
+      className={`header left-0 top-0 z-40 flex w-full items-center ${
+        sticky
+          ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
+          : "absolute bg-transparent"
+      }`}
+    >
+      <div className="container">
+        <div className="relative -mx-4 flex items-center justify-between">
+          {/* start of logp */}
+          <div className="w-60 max-w-full px-4 xl:mr-12">
+            <Link
+              href="/"
+              className={`header-logo block w-full ${
+                sticky ? "py-5 lg:py-2" : "py-8"
+              } `}
+            >
+              <Image
+                src="/images/logo/logo-2.svg"
+                alt="logo"
+                width={140}
+                height={30}
+                className="w-full dark:hidden"
+              />
+              <Image
+                src="/images/logo/logo.svg"
+                alt="logo"
+                width={140}
+                height={30}
+                className="hidden w-full dark:block"
+              />
+            </Link>
+          </div>
+          {/* End of the logo */}
+        </div>
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

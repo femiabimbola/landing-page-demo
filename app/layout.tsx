@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "@/components/ScrollUp";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -10,6 +11,7 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  weight: ['100','300', '500', '900'],
 });
 
 const robotoFont = Roboto({
@@ -33,6 +35,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${robotoFont.className} antialiased`}
       >
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );
