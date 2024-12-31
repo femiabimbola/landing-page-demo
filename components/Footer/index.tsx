@@ -29,7 +29,7 @@ const Footer = () => {
           </Link>
           {/* The end of logo  */}
 
-          <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1 border border-blue-700'> 
+          <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'> 
             {FOOTER_LINKS.map((columns) => (
               <FooterColumn title={columns.title}>
                 <ul className="regular-14 flex flex-col gap-4 text-gray-50">
